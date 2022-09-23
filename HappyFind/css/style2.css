@@ -1,0 +1,96 @@
+body{
+    margin:0;
+    font-family:sans-serif;
+    background-color: bisque;
+}
+.section{
+
+    display:flex;
+    justify-content:space-between;
+    padding:40px;
+    width:100%;
+    margin:2rem auto;
+}
+.section img{
+    
+    height:100px;
+    width: 100px;
+}
+.section h1
+{
+  justify-content: right;
+    margin:5px;
+    color:black;
+}
+.section nav{
+    width:100%;
+    margin:0;
+    float: right;
+}
+*{
+    margin:0;
+     padding:0;
+     box-sizing:border-box;
+     font-family: 'Poppins',sans-serif; 
+     
+    
+}
+.container{
+    
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+
+}
+nav{
+    background: #fff;
+    border-radius: 50px;
+    padding:1px;
+    box-shadow: 0 25px 20px -20px;
+}
+nav ul li{
+    width:10%;
+    list-style: none;
+    display: inline-block;
+    padding:25px ;
+    margin:35px;
+    font-family: sans-serif ;
+    font-size:18px;
+    font-weight:500;
+    color:#777;
+    cursor:pointer;
+    position:relative;
+    z-index:2;
+    transition:color 0.5s;
+
+
+
+}
+nav ul li::after{
+    content :'';
+    background: #f44566;
+    width:100%;
+    height:100%;
+    border-radius:100px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:-1;
+    opacity: 1;
+    transition: opacity 0.5s ;
+
+}
+nav ul li :hover{
+    color:  #fff;
+    border-radius: 50px;
+}
+nav ul li :hover::after{
+
+  background-color: #ffbdc9;
+   top:50%;
+   opacity:1;
+}
